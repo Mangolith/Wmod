@@ -40843,7 +40843,7 @@ if (Wars == 3) { // 3 wars
     unlockAchievement("I Burn My Bridges Behind Me");  
 }
 
-if (quickstats[0] >= 269 && !e.player_answers.includes(9747)||e.player_answers.includes(9753)||e.player_answers.includes(9756)||e.player_answers.includes(9762)||e.player_answers.includes(9765)||e.player_answers.includes(9771)||e.player_answers.includes(9848)||e.player_answers.includes(9857)||e.player_answers.includes(9866)||e.player_answers.includes(9875)||e.player_answers.includes(9884)||e.player_answers.includes(9893)||e.player_answers.includes(10227)||e.player_answers.includes(11202)||e.player_answers.includes(11209)||e.player_answers.includes(10303) ||e.player_answers.includes(10312)) { // dont go dirty
+if (quickstats[0] >= 269 && (dem == 1||dem == 4||dem == 6)!e.player_answers.includes(9747)||e.player_answers.includes(9753)||e.player_answers.includes(9756)||e.player_answers.includes(9762)||e.player_answers.includes(9765)||e.player_answers.includes(9771)||e.player_answers.includes(9848)||e.player_answers.includes(9857)||e.player_answers.includes(9866)||e.player_answers.includes(9875)||e.player_answers.includes(9884)||e.player_answers.includes(9893)||e.player_answers.includes(10227)||e.player_answers.includes(11202)||e.player_answers.includes(11209)||e.player_answers.includes(10303) ||e.player_answers.includes(10312)) { // dont go dirty
     unlockAchievement("Compassion of the Conservative");  
 }
 
