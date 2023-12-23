@@ -1558,7 +1558,7 @@ campaignTrail_temp.answers_json = [
         "pk": 8964,
         "fields": {
             "question": 8961,
-            "description": "If there was any wrong-doing, it’s only cause it’s what everyone else has been doing for years. Look at Clinton! Get Rummy to fess up to some mistakes ad say we’ll make it a priority to plug the holes in the engine."
+            "description": "If there was any wrong-doing, it’s only cause it’s what everyone else has been doing for years. Look at Clinton! Get Rummy to fess up to some mistakes and say we’ll make it a priority to plug the holes in the engine."
         }
     },
     {
