@@ -1,3 +1,10 @@
+function ctsAchievement(achievement, difficultyChecker = true){
+	if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=1)||!difficultyChecker)
+		if(campaignTrail_temp.CTS){
+		unlockAchievement(achievement);
+	}
+}
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -39588,7 +39595,7 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9710);   
             campaignTrail_temp.questions_json[22] = tunnel(9711);
             campaignTrail_temp.questions_json[24] = tunnel(9712);   
-            unlockAchievement("I'm With Her");  
+            ctsAchievement("I'm With Her");  
         }
         if(Dem == 2){ // Gore
             // Convention Above 
@@ -39596,7 +39603,7 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9704);   
             campaignTrail_temp.questions_json[22] = tunnel(9705);
             campaignTrail_temp.questions_json[24] = tunnel(9706);     
-            unlockAchievement("Oops!...I Did It Again"); 
+            ctsAchievement("Oops!...I Did It Again"); 
         }
         if(Dem == 3){
             // Convention Above  
@@ -39604,7 +39611,7 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9698);   
             campaignTrail_temp.questions_json[22] = tunnel(9699);
             campaignTrail_temp.questions_json[24] = tunnel(9700);     
-            unlockAchievement("Boy Orator"); 
+            ctsAchievement("Boy Orator"); 
         }
         if(Dem == 4){ // Wellstone
             // Convention Above 
@@ -39612,7 +39619,7 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9692);   
             campaignTrail_temp.questions_json[22] = tunnel(9693);
             campaignTrail_temp.questions_json[24] = tunnel(9694);    
-            unlockAchievement("Clear Skies");  
+            ctsAchievement("Clear Skies");  
         }
         if(Dem == 5){ // Lieberman
             // Convention Above 
@@ -39620,7 +39627,7 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9686);   
             campaignTrail_temp.questions_json[22] = tunnel(9687);
             campaignTrail_temp.questions_json[24] = tunnel(9688);  
-            unlockAchievement("D.I.N.O.");     
+            ctsAchievement("D.I.N.O.");     
         }
         if(Dem == 6){ // Sharpton
             // Convention Above  
@@ -39628,7 +39635,7 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9680);   
             campaignTrail_temp.questions_json[22] = tunnel(9681);
             campaignTrail_temp.questions_json[24] = tunnel(9682);     
-            unlockAchievement("Now is the Time");     
+            ctsAchievement("Now is the Time");     
         }
         if(Dem == 7){ // Kennedy
             // Convention Above   
@@ -39637,28 +39644,28 @@ const ads = [
             campaignTrail_temp.questions_json[21] = tunnel(9716);   
             campaignTrail_temp.questions_json[22] = tunnel(9717);
             campaignTrail_temp.questions_json[24] = tunnel(9718);   
-            unlockAchievement("Far from Crawford");  
+            ctsAchievement("Far from Crawford");  
         }
         // in-game achievements
 
         if ((e.player_answers.includes(9101)||e.player_answers.includes(9108)) && e.player_answers.includes(9296)) { // hillary votes for iraq and soc sec
-            unlockAchievement("Goldwater Girl");  
+            ctsAchievement("Goldwater Girl");  
         }
 
         if ((e.player_answers.includes(8965)||e.player_answers.includes(9096)) && e.player_answers.includes(9296)) { // no rumsfeld but iraq
-            unlockAchievement("Known Unknowns");  
+            ctsAchievement("Known Unknowns");  
         }
 
         if (e.player_answers.includes(9086) && e.player_answers.includes(9106)) { // no compromise on bills
-            unlockAchievement("Decision Points");  
+            ctsAchievement("Decision Points");  
         }
 
         if (e.player_answers.includes(9038)) { // replace cheney when you didnt have to
-            unlockAchievement("SAM239");  
+            ctsAchievement("SAM239");  
         }
 
         if (e.player_answers.includes(9092)) { // avoid blame for pentagon
-            unlockAchievement("Loose Change");  
+            ctsAchievement("Loose Change");  
         }
         
         
@@ -40833,31 +40840,31 @@ e.executable.push([2, (() => {e.image = e.image = 'https://i.imgur.com/y4eg352.p
 // END-OF-GAME ACHIEVEMENTS
 
 if (quickstats[0] >= 269 && Wins == 0 && Dem == 7) { // Beat TK with no wins
-    unlockAchievement("Loved by the People");  
+    ctsAchievement("Loved by the People");  
 }
 
 if (quickstats[0] >= 269 && ConRep == 0) { // win with no congressional relations
-    unlockAchievement("Hated by the Establishment");  
+    ctsAchievement("Hated by the Establishment");  
 }
 
 if (Wars == 0) { // no war
-    unlockAchievement("Dove");  
+    ctsAchievement("Dove");  
 }
 
 if (Wars == 1) { // 1 warn
-    unlockAchievement("Chickenhawk");  
+    ctsAchievement("Chickenhawk");  
 }
 
 if (Wars == 2) { // 2 wars
-    unlockAchievement("Hawk");  
+    ctsAchievement("Hawk");  
 }
 
 if (Wars == 3) { // 3 wars
-    unlockAchievement("I Burn My Bridges Behind Me");  
+    ctsAchievement("I Burn My Bridges Behind Me");  
 }
 
 if (quickstats[0] >= 269 && (Dem == 1||Dem == 4||Dem == 6) && !e.player_answers.includes(9747)||e.player_answers.includes(9753)||e.player_answers.includes(9756)||e.player_answers.includes(9762)||e.player_answers.includes(9765)||e.player_answers.includes(9771)||e.player_answers.includes(9848)||e.player_answers.includes(9857)||e.player_answers.includes(9866)||e.player_answers.includes(9875)||e.player_answers.includes(9884)||e.player_answers.includes(9893)||e.player_answers.includes(10227)||e.player_answers.includes(11202)||e.player_answers.includes(11209)||e.player_answers.includes(10303) ||e.player_answers.includes(10312)) { // dont go dirty
-    unlockAchievement("Compassion of the Conservative");  
+    ctsAchievement("Compassion of the Conservative");  
 }
 
 return construct(0);
