@@ -8,6 +8,16 @@ campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 20, \"c
 campaignTrail_temp.temp_election_list = [{"id": 9, "year": 2004, "is_premium": 0, "display_year": "2004"}];
 campaignTrail_temp.credits = "<button onclick='credits()'>Various people</button>";
 
+campaignTrail_temp.modBoxTheme = {
+     "header_color": "#484858",
+     "header_text_color": "#f5f3f4",
+     "description_text_color": "#000000",
+     "description_background_color": "#f5f3f4",
+     "main_color": "#484858",
+     "secondary_color": "#34343d",
+     "ui_text_color": "#FFFFFF"
+}
+
 credits = function() {
   credits = ["CODERS", "Mangolith, RouteVenus", "", "WRITERS", "QuoProQuid, CTAccount, Routevenus, Bonbishka, River, Ettingermentum", "", "SPECIAL THANKS", "Jet, Nina, Obummer", "", "BASE MAP", "u/Retassin and u/AMETSFAN", "", "ANOTHER GREATFUL THANKS", "QuoProQuid"]
   text = "CREDITS:\n\n"
