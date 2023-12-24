@@ -4942,7 +4942,7 @@ campaignTrail_temp.answers_json = [
         "pk": 10309,
         "fields": {
             "question": 9710,
-            "description": "You want to dig up the past, how about we start talkin' about Whitewater? Huh? How about Travelgate? How about Filegate? We all know that the Clintons have bee funneling money into their pockets their whole lives."
+            "description": "You want to dig up the past, how about we start talkin' about Whitewater? Huh? How about Travelgate? How about Filegate? We all know that the Clintons have been funneling money into their pockets their whole lives."
         }
     },
     {
